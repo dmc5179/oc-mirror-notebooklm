@@ -1,0 +1,11 @@
+kind: ImageSetConfiguration
+apiVersion: mirror.openshift.io/v2alpha1
+archiveSize: 25 # Size of tar archive files in GBs
+mirror:
+  platform:
+    channels:
+    - name: stable-4.18
+      type: ocp
+      minVersion: 4.18.22
+      maxVersion: 4.18.22
+    graph: true
